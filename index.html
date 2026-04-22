@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylonforce</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div></div>
+
+        <div class="progress" id="progress"></div>
+
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+        <div class="side-menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#industries">Industries</a>
+            <a href="tech_page.html" style="font-size: 14px; margin-left: 20px;">- Technology</a>
+            <a href="real_estate.html" style="font-size: 14px; margin-left: 20px;">- Real Estate</a>
+            <a href="automobile.html" style="font-size: 14px; margin-left: 20px;">- Automobile</a>
+            <a href="e-commerce.html" style="font-size: 14px; margin-left: 20px;">- Digital Assets</a>
+            <a href="media.html" style="font-size: 14px; margin-left: 20px;">- Media & Creative</a>
+            <a href="marketing.html" style="font-size: 14px; margin-left: 20px;">- Electronics</a>
+            <a href="retail.html" style="font-size: 14px; margin-left: 20px;">- Retail</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+        <div class="container">
+
+            <div class="nav">
+                <div class="logo" style="cursor: pointer;" onclick="window.location.href='index.html';"><img
+                        src="images/Ceylon Force (1).png" width="150px" alt="Ceylonforce logo"></div>
+                <div class="menu" onclick="toggleMenu()">☰</div>
+
+            </div>
+
+            <div class="hero">
+                <h2>Introducing</h2>
+                <h2><span class="gradient">Ceylonforce Holdings</span></h2>
+
+                <h5>
+                    <i>Seven Industries, One Force.</i>
+                </h5>
+                <p>Choose your industry and view more details.</p>
+
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='tech_page.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/tech_page.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Technology</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='real_estate.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/real_estate.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Real Estate</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='automobile.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/automobile.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Automobile</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='e-commerce.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/Digital assests.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Digital Assets</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='media.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/media.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Media & Creative</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='marketing.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/marketing.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Electronics</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card video-card" onclick="window.location.href='retail.html';" style="cursor: pointer;">
+                <video autoplay muted loop playsinline class="card-video" width="230px" height="230px" rx="30px">
+                    <source src="images/retail.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <div style="text-align: center;">
+                        <h3>Retail</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="contact" class="section-title">Contact</div>
+            <div class="card">
+                <input id="name" placeholder="Name">
+                <input id="email" placeholder="Email">
+                <textarea id="message" placeholder="Message"></textarea>
+                <button class="btn" onclick="openWhatsAppWithLead()">Send via WhatsApp</button>
+                <!--reset button-->
+                <button class="btn" onclick="resetForm()">Reset</button>
+            </div>
+
+        </div>
+
+
+
+        <a class="whatsapp" href="https://wa.me/94768886044" target="_blank">Chat</a>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script src="script.js"></script>
+
+        <footer style="margin-top: 50px; padding-bottom: 60px; width: 100%;">
+            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+
+
+
+                <div class="socials" style="justify-content: center; width: 100%;">
+
+                    <a href="https://instagram.com/ceylonforce?igsh=NWZnNm9ibzVweWUO&utm_source=qr" target="_blank"
+                        class="social-btn instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://facebook.com/share/183cahDm4u/?mibextid=wwXIfr" target="_blank"
+                        class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ceylonforce.holdings@gmail.com"
+                        target="_blank" class="social-btn email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@ceylonforce" target="_blank" class="social-btn tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                </div>
+                <h6 style="padding-top: 20px;">Ceylonforce</h6>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
