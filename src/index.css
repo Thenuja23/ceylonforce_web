@@ -1,0 +1,111 @@
+/* ─── FONTS (self-hosted, no network dependency) ─────────── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/InstrumentSerif-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/InstrumentSerif-Italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ─── DESIGN TOKENS ─────────────────────────────────────── */
+:root {
+  --bg:        #000000;
+  --bg-soft:   #0a0a0a;
+  --text:      #ffffff;
+  --muted:     #9A9A9A;
+  --soft:      #D8D8D8;
+  --border:    rgba(255, 255, 255, 0.08);
+  --border-md: rgba(255, 255, 255, 0.12);
+
+  /* Typography */
+  --font-sans:  'Inter', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Instrument Serif', 'Georgia', 'Times New Roman', serif;
+  --font-tech:  'Space Grotesk', ui-monospace, 'SF Mono', monospace;
+
+  /* Spacing */
+  --page-x: clamp(20px, 4vw, 64px);
+
+  /* Easing */
+  --ease-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* ─── RESET ──────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--bg);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ─── REDUCED MOTION ────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
