@@ -102,7 +102,7 @@ export default function ForceSection() {
         <div className="cf-process" aria-label="Our process">
           {processSteps.map((step) => (
             <div key={step.index} className="cf-process__item">
-              <span className="cf-process__index">{step.index}</span>
+              
               <div className="cf-process__content">
                 <h3 className="cf-process__title">{step.title}</h3>
                 <p className="cf-process__body">{step.body}</p>

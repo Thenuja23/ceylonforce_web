@@ -682,12 +682,6 @@ export default function ParticleHero() {
             </div>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="ph-scroll-hint" aria-hidden="true">
-            <div className="ph-scroll-hint__line" />
-            <span>SCROLL</span>
-          </div>
-
         </div>
       </div>
     </section>

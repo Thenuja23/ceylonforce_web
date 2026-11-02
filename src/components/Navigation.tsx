@@ -104,7 +104,6 @@ export default function Navigation() {
               style={{ transitionDelay: open ? `${i * 60 + 120}ms` : '0ms' }}
               onClick={close}
             >
-              <span className="cf-mobile-menu__num">{String(i + 1).padStart(2, '0')}</span>
               <span className="cf-mobile-menu__label">
                 {item.label.replace(/^\d+ /, '')}
               </span>

@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { useReducedMotion } from './hooks/useReducedMotion'
 import { useLenis } from './hooks/useLenis'
 import Loader from './components/Loader'
-import CustomCursor from './components/CustomCursor'
 import Navigation from './components/Navigation'
 import ParticleHero from './components/ParticleHero'
 import ForceSection from './components/ForceSection'
 import Industries from './components/Industries'
 import Capabilities from './components/Capabilities'
+import Leadership from './components/Leadership'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackgroundParticles from './components/BackgroundParticles'
@@ -27,7 +27,6 @@ export default function App() {
 
       <BackgroundParticles />
 
-      <CustomCursor />
       <Navigation />
 
       <main id="main-content">
@@ -35,6 +34,7 @@ export default function App() {
         <ForceSection />
         <Industries />
         <Capabilities />
+        <Leadership />
         <Contact />
       </main>
 

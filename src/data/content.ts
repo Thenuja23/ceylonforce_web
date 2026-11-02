@@ -30,10 +30,10 @@ export const about = {
 }
 
 export const nav = [
-  { label: '01 ABOUT',        href: '#about' },
-  { label: '02 INDUSTRIES',   href: '#industries' },
-  { label: '03 CAPABILITIES', href: '#capabilities' },
-  { label: '04 CONTACT',      href: '#contact' },
+  { label: 'ABOUT',        href: '#about' },
+  { label: 'INDUSTRIES',   href: '#industries' },
+  { label: 'CAPABILITIES', href: '#capabilities' },
+  { label: 'CONTACT',      href: '#contact' },
 ]
 
 export const process = [
